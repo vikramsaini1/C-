@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+   int n;
+   unsigned long long factorial = 1;
+   cout<<"Enter the a factorial:"<<endl;
+   cin>>n;
+   
+
+   if (n<0){
+       cout<<"Factorial not defined for the negative number "<<endl;
+
+   }
+   else{
+       for(int i=1 ; i<=n ; i++){
+     factorial *=i;
+     
+   }
+   cout<<"Factorial of  "<<n<<" is "<<factorial<<endl;
+   }
+   
+   
+   return 0;
+   
+}
