@@ -1,0 +1,29 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+    int num, originalNum, remainder, result;
+
+    cout << "Armstrong numbers between 1 and 1000 are: " << endl;
+
+    for(int i = 1; i <= 1000; ++i) {
+        num = i;
+        originalNum = num;
+        result = 0;
+
+        while (originalNum != 0) {
+            remainder = originalNum % 10;
+            result += pow(remainder, 3);
+            originalNum /= 10;
+        }
+
+        if (result == num) {
+            cout << num << " ";
+        }
+    }
+
+    cout << endl;
+
+    return 0;
+}
